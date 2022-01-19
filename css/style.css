@@ -1,0 +1,8 @@
+.heroImage{
+    background-image: url('../image/sun.png');
+    height: 100vh;
+}
+.navBar{
+    background-color: white;
+    height: 6.5vh;
+}
