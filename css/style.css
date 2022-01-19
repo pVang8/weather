@@ -1,8 +1,62 @@
-.heroImage{
+/* ---------Day--------- */
+.dayHeroImage{
     background-image: url('../image/sun.png');
     height: 100vh;
+    background-size: cover;
 }
-.navBar{
+.dayNavBar{
     background-color: white;
-    height: 6.5vh;
+    height: 6vh;
+}
+.dayNavFont{
+    color: #707070;
+    
+}
+.dayCard{
+    background-color: white;
+    height: 250px;
+    border-radius: 18px;
+}
+.dayHr {
+  border:none;
+  border-top:3px dotted #110c0c;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:90%;
+}
+.dayMainTemp{
+    font-size: 90px;
+}
+
+/* ---------Default stuff--------- */
+
+
+.searchBtn{
+    background-color: #BDB8F8;
+    border-radius: 10%;
+    height: 28px;
+    width: 28px;
+    margin-left: 5px;
+}
+.inputBox{
+    width: 40%;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  0 0 10px #d1cccc;
+    font-size: 9px;
+    padding-left: 12px;
+}
+.bodyMT{
+    margin-top: 35px;
+}
+
+
+
+
+/* ---------Night--------- */
+.nightHeroImage{
+    background-image: url('../image/moon.png');
+    height: 100vh;
 }
