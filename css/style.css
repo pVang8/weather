@@ -14,8 +14,11 @@
 }
 .dayCard{
     background-color: white;
-    height: 250px;
+    min-height: 250px;
+    max-height: auto;
     border-radius: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .dayHr {
   border:none;
@@ -23,15 +26,83 @@
   color:#fff;
   background-color:#fff;
   height:1px;
-  width:90%;
+  width:100%;
+}
+.dayLVDot
+{
+  border-left: 3px dotted #c7c5c5;
+  color:#fff;
+  background-color:#fff;
+  height: 150px;
+}
+.dayRVDot
+{
+  border-right: 3px dotted #c7c5c5;
+  color:#fff;
+  background-color:#fff;
+  height: 150px;
 }
 .dayMainTemp{
-    font-size: 90px;
+    font-size: 4.2rem;
+}
+.secCardTemp{
+    font-size: 2rem;
+}
+.dayFiveForecast{
+    border-radius: 10px;
+    margin-left: 8px;
+    
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.39);
+    opacity: 61%;
+}
+.tempConvertText{
+    text-decoration: none;
+    color: white;
+}
+
+/* Favorite list btn stuff */
+.dayFavLBtn{
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    width: 325px;
+}
+.btn-light:hover
+{
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+}
+.favLText{
+    font-size: 15px;
 }
 
 /* ---------Default stuff--------- */
+.favBtnL{
+    margin-bottom: 0%;
+}
+.linePad{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
+.fiveDayPad{
+    padding-right: 0%;
+}
 
+.noMnoP{
+    margin-top: 0%;
+    padding-top: 0%;
+}
+.heart{
+    height: 25px;
+    width: 25px;
+}
+.mBot{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
 .searchBtn{
     background-color: #BDB8F8;
     border-radius: 10%;

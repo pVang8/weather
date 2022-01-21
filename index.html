@@ -23,22 +23,22 @@
             </div>
         </div>
     <!-- body -->
-        <div class="row bodyMT ">
+        <div class="row bodyMT">
             <div class="col-3"></div>
             <div class="col-3">
                 <div class="card dayCard">
                     <div class="card-body">
-                        <div class="row">
+                        <div class="row" height="100px">
                             <div class="col-6">
                                 <h3>Modesto</h3>
                             </div>
                             <div class="col-6 d-flex justify-content-end">
-                                <img src="./image/heart.png" alt="heart logo">
+                                <img src="./image/heart.png" class="heart" alt="heart logo">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row ">
                             <div class="col-4">
-                                <img src="./image/sunny.png" class="img-fluid" alt="sun logo">
+                                <img src="./image/sunny.png" height="90px" alt="sun logo">
                             </div>
                             <div class="col-8">
                                 <p class="dayMainTemp">54°F</p>
@@ -46,26 +46,144 @@
                         </div>
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center">
-                                <hr class="dayHr"/>
+                                <hr class="dayHr noMnoP"/>
                             </div>
                         </div>
-                        
-                      
-                      
-                      
+                        <div class="row">
+                            <div class="col-6">
+                                <p>cloudy</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="d-flex justify-content-end">H:72°F</p>
+                            </div>
+                            <div class="col-3">
+                                <p class="d-flex justify-content-start">L:37°F</p>
+                            </div>
+                        </div>
                     </div>
                   </div>
             </div>
-            <div class="col-3">
+            <div class="col-3 ">
                 <div class="card dayCard">
                     <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <div class="row " height =" 100px">
+                          <div class="col-6">
+                              <p>Today</p>
+                          </div>
+                          <div class="col-6">
+                              <p class="d-flex justify-content-end">Time</p>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-3">
+                              <p class="text-center">8am</p>
+                              <img src="./image/sunny.png" height="55px" alt="sun logo">
+                              <p class="text-center secCardTemp">37°</p>
+                          </div>
+                          <div class="col-1 dayLVDot"></div>
+                          <div class="col-3">
+                              <p class="text-center">noon</p>
+                              <img src="./image/cloudy.png" height="55px" alt="cloudy logo">
+                              <p class="text-center secCardTemp">58°</p>
+
+                          </div>
+                          <div class="col-1 dayRVDot" ></div>
+                          <div class="col-3">
+                              <p class="text-center">8pm</p>
+                              <img src="./image/night.png" height="40px" alt="moon logo">
+                              <p class="text-center secCardTemp mt-3">44°</p>
+                          </div>
+                      </div>
+                      
+                      
+
                       
                     </div>
                   </div>
             </div>
             <div class="col-3"></div>
+            <!-- 5 day forecast -->
+            <div class="row mt-2">
+                <div class="col-3"></div>
+                <div class="col-6 d-flex justify-content-center fiveDayPad">
+                    <div class="card dayFiveForecast">
+                        <p class="text-center">Tue 12/8</p>
+                        <div class="d-flex justify-content-center">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <p>74°F</p>
+                            <h6 class="linePad">|</h6>
+                            <p>34°F</p>
+                        </div>
+                    </div>
+                    <div class="card dayFiveForecast">
+                        <p class="text-center">Wed 12/9</p>
+                        <div class="d-flex justify-content-center">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <p>74°F</p>
+                            
+                            
+                            <h6 class="linePad"> | </h6>
+                            <p>34°F</p>
+                        </div>
+                    </div>
+                    <div class="card dayFiveForecast">
+                        <p class="text-center">Thur 12/10</p>
+                        <div class="d-flex justify-content-center">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <p>74°F</p>
+                            <h6 class="linePad">|</h6>
+                            <p>34°F</p>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="card dayFiveForecast">
+                        <p class="text-center">Fri 12/11</p>
+                        <div class="d-flex justify-content-center">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <p>74°F</p>
+                            <h6 class="linePad">|</h6>
+                            <p>34°F</p>
+                        </div>
+                    </div>
+                    <div class="card dayFiveForecast">
+                        <p class="text-center">Sat 12/12</p>
+                        <div class="d-flex justify-content-center">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <p>74°F</p>
+                            <h6 class="linePad">|</h6>
+                            <p>34°F</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-3"></div>
+                
+            </div>
+            <!-- Favorite list -->
+            <div class="row mt-3">
+                <div class="col-4"></div>
+                <div class="col-4 d-flex justify-content-center">
+                    <button type="button" class="btn btn-light text-center dayFavLBtn"><h6 class="favBtnL favLText"> <img src="./image/greyHeart.png" alt="Grey Heart"> Open Your Favorite Places</h6></button>
+                </div>
+                <div class="col-4"></div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <a href="" class="tempConvertText">temperature view: Fahrenheit (click to change)</a>
+                </div>
+            </div>
         </div>
 
     </div>
