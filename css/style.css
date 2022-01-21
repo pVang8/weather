@@ -129,3 +129,11 @@
 .bodyMT{
     margin-top: 35px;
 }
+
+
+
+
+.credit{
+    position: fixed;
+    bottom: 0;
+}
