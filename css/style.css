@@ -137,3 +137,80 @@
     position: fixed;
     bottom: 0;
 }
+
+/* ---------Night--------- */
+.nightHeroImage{
+    background-image: url('../image/moon.png');
+    height: 100vh;
+    background-size: cover;
+}
+.nightNavBar{
+    background-color: #2F2F2F;
+    height: 6vh;
+}
+.nightNavFont{
+    color: white;
+}
+.nightinputBox{
+    width: 500%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 9px;
+    padding-left: 12px;
+}
+.nightCard{
+    background-color: #2F2F2F;
+    min-height: 250px;
+    max-height: auto;
+    border-radius: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.nightText{
+    color: white;
+}
+
+.nightHr {
+    border:none;
+    border-top:3px dotted #c7c5c5;
+    color:#fff;
+    background-color:#2F2F2F;
+    height:1px;
+    width:100%;
+  }
+  .nightLVDot
+  {
+    border-left: 3px dotted #c7c5c5;
+    color: #fff;
+    background-color:#2F2F2F;
+    height: 150px;
+  }
+  .nightRVDot
+  {
+    border-right: 3px dotted #c7c5c5;
+    color:#fff;
+    background-color:#2F2F2F;
+    height: 150px;
+  }
+  .nightFiveForecast{
+    border-radius: 10px;
+    margin-left: 8px;
+    
+    width: 150px;
+    background-color: rgba(18.4%, 18.4%, 18.4%, 0.39);
+    
+}
+
+.nightFavLBtn{
+    background-color: rgba(18.4%, 18.4%, 18.4%);
+    border: none;
+    border-radius: 10px;
+    width: 325px;
+}
+.btnNight:hover
+{
+    text-decoration: none;
+    background-color: rgba(18.4%, 18.4%, 18.4%);
+    border: none;
+}
