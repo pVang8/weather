@@ -68,3 +68,9 @@
     border-radius: 10px;
     width: 325px;
 }
+.btnNight:hover
+{
+    text-decoration: none;
+    background-color: rgba(18.4%, 18.4%, 18.4%);
+    border: none;
+}
