@@ -8,18 +8,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/night.css">
     <title>climate.xchange</title>
   </head>
   <body>
-    <div class="contianer-fluid dayHeroImage">
+    <div class="contianer-fluid dayHeroImage nightHeroImage">
     <!-- navBar -->
-        <div class="row dayNavBar text-center">
+        <div class="row dayNavBar nightNavBar text-center">
             <div class="col-2"></div>
             <div class="col-4 mt-2">
-                <h3 class="dayNavFont">climate.xchange</h3>
+                <h3 class="dayNavFont nightNavFont">climate.xchange</h3>
             </div>
             <div class="col-2 mt-2 d-flex justify-content-center zeroPadLR">
-                <input type="text" class="inputBox" placeholder="Search for a City">
+                <input type="text" class="inputBox nightinputBox" placeholder="Search for a City">
             </div>
             <div class="col-3 text-center mt-2">
                 <button type="button" class="btn searchBtn d-flex justify-content-center"><img src="./image/search.png" width="20px" alt="magnifying glass"></button>
@@ -29,72 +30,74 @@
         <div class="row bodyMT">
             <div class="col-3"></div>
             <div class="col-3">
-                <div class="card dayCard">
+                <div class="card dayCard nightCard">
                     <div class="card-body">
                         <div class="row" height="100px">
                             <div class="col-6">
-                                <h3>Modesto</h3>
+                                <h3 class="nightText">Modesto</h3>
                             </div>
                             <div class="col-6 d-flex justify-content-end">
-                                <img src="./image/heart.png" class="heart" alt="heart logo">
+                                <!-- <img src="./image/heart.png" class="heart" alt="heart logo"> -->
+                                <img src="./image/whiteHeart.png" class="heart" alt="white heart">
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-4">
-                                <img src="./image/sunny.png" height="90px" alt="sun logo">
+                                <!-- <img src="./image/sunny.png" height="90px" alt="sun logo"> -->
+                                <img src="./image/night.png" height="55px" alt=" moon logo">
                             </div>
                             <div class="col-8">
-                                <p class="dayMainTemp">54°F</p>
+                                <p class="dayMainTemp nightText">54°F</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center">
-                                <hr class="dayHr noMnoP"/>
+                                <hr class="dayHr nightHr noMnoP"/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <p>cloudy</p>
+                                <p class="nightText">cloudy</p>
                             </div>
                             <div class="col-3">
-                                <p class="d-flex justify-content-end">H:72°F</p>
+                                <p class="d-flex justify-content-end nightText">H:72°F</p>
                             </div>
                             <div class="col-3">
-                                <p class="d-flex justify-content-start">L:37°F</p>
+                                <p class="d-flex justify-content-start nightText">L:37°F</p>
                             </div>
                         </div>
                     </div>
                   </div>
             </div>
             <div class="col-3 ">
-                <div class="card dayCard">
+                <div class="card dayCard nightCard">
                     <div class="card-body">
                       <div class="row " height =" 100px">
                           <div class="col-6">
-                              <p>Today</p>
+                              <p class="nightText">Today</p>
                           </div>
                           <div class="col-6">
-                              <p class="d-flex justify-content-end">Time</p>
+                              <p class="d-flex justify-content-end nightText">Time</p>
                           </div>
                       </div>
                       <div class="row">
                           <div class="col-3">
-                              <p class="text-center">8am</p>
+                              <p class="text-center nightText">8am</p>
                               <img src="./image/sunny.png" height="55px" alt="sun logo">
-                              <p class="text-center secCardTemp">37°</p>
+                              <p class="text-center secCardTemp nightText">37°</p>
                           </div>
-                          <div class="col-1 dayLVDot"></div>
+                          <div class="col-1 dayLVDot nightLVDot"></div>
                           <div class="col-3">
-                              <p class="text-center">noon</p>
+                              <p class="text-center nightText">noon</p>
                               <img src="./image/cloudy.png" height="55px" alt="cloudy logo">
-                              <p class="text-center secCardTemp">58°</p>
+                              <p class="text-center secCardTemp nightText">58°</p>
 
                           </div>
-                          <div class="col-1 dayRVDot" ></div>
+                          <div class="col-1 dayRVDot nightRVDot" ></div>
                           <div class="col-3">
-                              <p class="text-center">8pm</p>
+                              <p class="text-center nightText">8pm</p>
                               <img src="./image/night.png" height="40px" alt="moon logo">
-                              <p class="text-center secCardTemp mt-3">44°</p>
+                              <p class="text-center secCardTemp mt-3 nightText">44°</p>
                           </div>
                       </div>
                       
@@ -109,23 +112,25 @@
             <div class="row mt-2">
                 <div class="col-3"></div>
                 <div class="col-6 d-flex justify-content-center fiveDayPad">
-                    <div class="card dayFiveForecast">
-                        <p class="text-center">Tue 12/8</p>
+                    <div class="card dayFiveForecast nightFiveForecast">
+                        <p class="text-center nightText">Tue 12/8</p>
                         <div class="d-flex justify-content-center">
-                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
+                            <img src="./image/white rain.png" alt="">
                         </div>
-                        <div class="d-flex justify-content-center mt-2">
+                        <div class="d-flex justify-content-center mt-2 nightText">
                             <p>74°F</p>
                             <h6 class="linePad">|</h6>
                             <p>34°F</p>
                         </div>
                     </div>
-                    <div class="card dayFiveForecast">
-                        <p class="text-center">Wed 12/9</p>
+                    <div class="card dayFiveForecast nightFiveForecast">
+                        <p class="text-center nightText">Wed 12/9</p>
                         <div class="d-flex justify-content-center">
-                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
+                            <img src="./image/white rain.png" alt="">
                         </div>
-                        <div class="d-flex justify-content-center mt-2">
+                        <div class="d-flex justify-content-center mt-2 nightText">
                             <p>74°F</p>
                             
                             
@@ -133,12 +138,13 @@
                             <p>34°F</p>
                         </div>
                     </div>
-                    <div class="card dayFiveForecast">
-                        <p class="text-center">Thur 12/10</p>
+                    <div class="card dayFiveForecast nightFiveForecast">
+                        <p class="text-center nightText">Thur 12/10</p>
                         <div class="d-flex justify-content-center">
-                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
+                            <img src="./image/white rain.png" alt="">
                         </div>
-                        <div class="d-flex justify-content-center mt-2">
+                        <div class="d-flex justify-content-center mt-2 nightText">
                             <p>74°F</p>
                             <h6 class="linePad">|</h6>
                             <p>34°F</p>
@@ -146,23 +152,25 @@
                         
                         
                     </div>
-                    <div class="card dayFiveForecast">
-                        <p class="text-center">Fri 12/11</p>
+                    <div class="card dayFiveForecast nightFiveForecast">
+                        <p class="text-center nightText">Fri 12/11</p>
                         <div class="d-flex justify-content-center">
-                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
+                            <img src="./image/white rain.png" alt="">
                         </div>
-                        <div class="d-flex justify-content-center mt-2">
+                        <div class="d-flex justify-content-center mt-2 nightText">
                             <p>74°F</p>
                             <h6 class="linePad">|</h6>
                             <p>34°F</p>
                         </div>
                     </div>
-                    <div class="card dayFiveForecast">
-                        <p class="text-center">Sat 12/12</p>
+                    <div class="card dayFiveForecast nightFiveForecast">
+                        <p class="text-center nightText">Sat 12/12</p>
                         <div class="d-flex justify-content-center">
-                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
+                            <img src="./image/white rain.png" alt="">
                         </div>
-                        <div class="d-flex justify-content-center mt-2">
+                        <div class="d-flex justify-content-center mt-2 nightText">
                             <p>74°F</p>
                             <h6 class="linePad">|</h6>
                             <p>34°F</p>
@@ -178,7 +186,24 @@
             <div class="row mt-3">
                 <div class="col-4"></div>
                 <div class="col-4 d-flex justify-content-center">
-                    <button type="button" class="btn btn-light text-center dayFavLBtn"><h6 class="favBtnL favLText"> <img src="./image/greyHeart.png" alt="Grey Heart"> Open Your Favorite Places</h6></button>
+                      <button class="btn btn-light text-center dayFavLBtn nightFavLBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <h6 class="favBtnL favLText nightText">
+                             <!-- <img src="./image/greyHeart.png" alt="Grey Heart"> -->
+                             <img src="./image/whiteHeart.png" height="17px" alt="white Heart">
+                              Open Your Favorite Places</h6>
+                      </button>
+                      
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Favorite Cities</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <div>
+                            
+                          </div>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-4"></div>
             </div>

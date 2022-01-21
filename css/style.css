@@ -20,28 +20,28 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-.dayHr {
+/* .dayHr {
   border:none;
   border-top:3px dotted #110c0c;
   color:#fff;
   background-color:#fff;
   height:1px;
   width:100%;
-}
-.dayLVDot
+} */
+/* .dayLVDot
 {
   border-left: 3px dotted #c7c5c5;
   color:#fff;
   background-color:#fff;
   height: 150px;
-}
-.dayRVDot
+} */
+/* .dayRVDot
 {
   border-right: 3px dotted #c7c5c5;
   color:#fff;
   background-color:#fff;
   height: 150px;
-}
+} */
 .dayMainTemp{
     font-size: 4.2rem;
 }
@@ -113,7 +113,7 @@
     width: 40px;
     margin-left: 5px;
 }
-.inputBox{
+/* .inputBox{
     width: 500%;
     height: 30px;
     border-radius: 5px;
@@ -121,20 +121,11 @@
     box-shadow:  0 0 10px #d1cccc;
     font-size: 9px;
     padding-left: 12px;
-}
+} */
 .zeroPadLR{
     padding-left: 0%;
     padding-right: 0%;
 }
 .bodyMT{
     margin-top: 35px;
-}
-
-
-
-
-/* ---------Night--------- */
-.nightHeroImage{
-    background-image: url('../image/moon.png');
-    height: 100vh;
 }
