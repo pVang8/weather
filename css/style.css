@@ -1,4 +1,18 @@
 /* ---------Day--------- */
+.dayText{
+    color: black;
+    font-family: 'Biryani', sans-serif;
+}
+.dayPhiloText{
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.1rem;
+}
+.dayPhiloText2{
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 5rem;
+}
 .dayHeroImage{
     background-image: url('../image/sun.png');
     height: 100vh;
@@ -20,30 +34,31 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-/* .dayHr {
+.dayHr {
   border:none;
   border-top:3px dotted #110c0c;
   color:#fff;
   background-color:#fff;
   height:1px;
   width:100%;
-} */
-/* .dayLVDot
+} 
+.dayLVDot
 {
   border-left: 3px dotted #c7c5c5;
   color:#fff;
   background-color:#fff;
   height: 150px;
-} */
-/* .dayRVDot
+} 
+.dayRVDot
 {
   border-right: 3px dotted #c7c5c5;
   color:#fff;
   background-color:#fff;
   height: 150px;
-} */
+}
 .dayMainTemp{
-    font-size: 4.2rem;
+    font-size: 4rem;
+    font-family: 'Philosopher', sans-serif;
 }
 .secCardTemp{
     font-size: 2rem;
@@ -82,6 +97,10 @@
 }
 
 /* ---------Default stuff--------- */
+.moonL{
+    padding-top: 2px;
+    padding-left: 10px;
+}
 .favBtnL{
     margin-bottom: 0%;
 }
@@ -100,7 +119,14 @@
 }
 .heart{
     height: 25px;
-    width: 25px;
+    width: 28px;
+    background-size: center;
+    background-image: url('../image/heart.png');
+}
+.whiteHeart{
+    height: 25px;
+    width: 28px;
+    background-image: url('../image/whiteHeart.png');
 }
 .mBot{
     margin-bottom: 0%;
@@ -113,7 +139,7 @@
     width: 40px;
     margin-left: 5px;
 }
-/* .inputBox{
+.inputBox{
     width: 500%;
     height: 30px;
     border-radius: 5px;
@@ -121,7 +147,7 @@
     box-shadow:  0 0 10px #d1cccc;
     font-size: 9px;
     padding-left: 12px;
-} */
+} 
 .zeroPadLR{
     padding-left: 0%;
     padding-right: 0%;
@@ -130,6 +156,16 @@
     margin-top: 35px;
 }
 
+.greyHeart{
+background-image: url('../image/greyHeart.png');
+height: 25px;
+width: 28px;
+}
+.anotherWhiteHeart{
+background-image: url('../image/whiteHeart.png');
+height: 25px;
+width: 28px;
+}
 
 
 
@@ -151,7 +187,8 @@
 .nightNavFont{
     color: white;
 }
-.nightinputBox{
+
+.nightInputBox{
     width: 500%;
     height: 30px;
     border-radius: 5px;
@@ -169,6 +206,17 @@
 }
 .nightText{
     color: white;
+    font-family: 'Biryani', sans-serif;
+}
+.nightTextMain{
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 4rem;
+}
+.nightPhiloTxt{
+    color: white;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 1.1rem;
 }
 
 .nightHr {

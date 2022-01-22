@@ -19,15 +19,15 @@
     <title>climate.xchange</title>
   </head>
   <body>
-    <div class="contianer-fluid dayHeroImage nightHeroImage">
+    <div id="hero" class="container-fluid">
     <!-- navBar -->
-        <div class="row dayNavBar nightNavBar text-center">
+        <div id="nav" class="">
             <div class="col-2"></div>
             <div class="col-4 mt-2">
-                <h3 class="dayNavFont nightNavFont">climate.xchange</h3>
+                <h3 id="navFont" class=" ">climate.xchange</h3>
             </div>
             <div class="col-2 mt-2 d-flex justify-content-center zeroPadLR">
-                <input type="text" class="inputBox nightinputBox" placeholder="Search for a City">
+                <input type="text" id="inputBox" class=" " placeholder="Search for a City">
             </div>
             <div class="col-3 text-center mt-2">
                 <button type="button" class="btn searchBtn d-flex justify-content-center"><img src="./image/search.png" width="20px" alt="magnifying glass"></button>
@@ -37,74 +37,77 @@
         <div class="row bodyMT">
             <div class="col-3"></div>
             <div class="col-3">
-                <div class="card dayCard nightCard">
+                <div id="firstCard" class="">
                     <div class="card-body">
                         <div class="row" height="100px">
                             <div class="col-6">
-                                <h3 class="nightText">Modesto</h3>
+                                <h3 id="nText" class=" ">Modesto</h3>
                             </div>
                             <div class="col-6 d-flex justify-content-end">
-                                <!-- <img src="./image/heart.png" class="heart" alt="heart logo"> -->
-                                <img src="./image/whiteHeart.png" class="heart" alt="white heart">
+                                <!-- creating elements -->
+                                <div class="heart" id="heart"></div>
+                                
+                                
                             </div>
                         </div>
                         <div class="row ">
                             <div class="col-4">
-                                <!-- <img src="./image/sunny.png" height="90px" alt="sun logo"> -->
-                                <img src="./image/night.png" height="55px" alt=" moon logo">
+                                <!-- creating elements -->
+                                <img src="./image/sunny.png" height="90px" alt="sun logo">
+                                <!-- <img src="./image/night.png" height="55px" alt=" moon logo"> -->
                             </div>
                             <div class="col-8">
-                                <p class="dayMainTemp nightText">54°F</p>
+                                <p id="mainTemp" class="">54°F</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 d-flex justify-content-center">
-                                <hr class="dayHr nightHr noMnoP"/>
+                                <hr id="hDot" class=" "/>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <p class="nightText">cloudy</p>
+                                <p id="weatherTxt" class="nightText">cloudy</p>
                             </div>
                             <div class="col-3">
-                                <p class="d-flex justify-content-end nightText">H:72°F</p>
+                                <p id="highT" class="d-flex justify-content-end nightText">H:72°F</p>
                             </div>
                             <div class="col-3">
-                                <p class="d-flex justify-content-start nightText">L:37°F</p>
+                                <p id="lowT" class="d-flex justify-content-start nightText">L:37°F</p>
                             </div>
                         </div>
                     </div>
                   </div>
             </div>
             <div class="col-3 ">
-                <div class="card dayCard nightCard">
+                <div id="secCard" class="card dayCard nightCard">
                     <div class="card-body">
                       <div class="row " height =" 100px">
                           <div class="col-6">
-                              <p class="nightText" id="toDay">Today</p>
+                              <p class=" " id="toDay">Today</p>
                           </div>
                           <div class="col-6">
-                              <p class="d-flex justify-content-end nightText" id="time">Time</p>
+                              <p class="" id="time">Time</p>
                           </div>
                       </div>
                       <div class="row">
                           <div class="col-3">
-                              <p class="text-center nightText">8am</p>
+                              <p id="timeTitle" class="text-center nightText">8am</p>
                               <img src="./image/sunny.png" height="55px" alt="sun logo">
-                              <p class="text-center secCardTemp nightText">37°</p>
+                              <p id="startT" class="text-center secCardTemp nightText">37°</p>
                           </div>
-                          <div class="col-1 dayLVDot nightLVDot"></div>
+                          <div id="vDot1" class=""></div>
                           <div class="col-3">
-                              <p class="text-center nightText">noon</p>
+                              <p id="timeTitle2" class="text-center nightText">noon</p>
                               <img src="./image/cloudy.png" height="55px" alt="cloudy logo">
-                              <p class="text-center secCardTemp nightText">58°</p>
+                              <p id="midT" class="text-center secCardTemp nightText">58°</p>
 
                           </div>
-                          <div class="col-1 dayRVDot nightRVDot" ></div>
+                          <div id="vDot2" class="col-1 dayRVDot nightRVDot" ></div>
                           <div class="col-3">
-                              <p class="text-center nightText">8pm</p>
-                              <img src="./image/night.png" height="40px" alt="moon logo">
-                              <p class="text-center secCardTemp mt-3 nightText">44°</p>
+                              <p id="timeTitle3" class="text-center nightText">8pm</p>
+                              <img src="./image/night.png" height="40px" class="mb-3 moonL" alt="moon logo" >
+                              <p id="endT" class="">44°</p>
                           </div>
                       </div>
                       
@@ -119,68 +122,69 @@
             <div class="row mt-2">
                 <div class="col-3"></div>
                 <div class="col-6 d-flex justify-content-center fiveDayPad">
-                    <div class="card dayFiveForecast nightFiveForecast">
-                        <p class="text-center nightText">Tue 12/8</p>
+                    <div id="day1" class="">
+                        <p id="dayOne" class="">Tue 12/8</p>
                         <div class="d-flex justify-content-center">
-                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
-                            <img src="./image/white rain.png" alt="">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- create element -->
+                            <!-- <img src="./image/white rain.png" alt=""> -->
                         </div>
-                        <div class="d-flex justify-content-center mt-2 nightText">
-                            <p>74°F</p>
-                            <h6 class="linePad">|</h6>
-                            <p>34°F</p>
+                        <div id="dayOneTextD" class="">
+                            <p id="hTmp1" >74°F</p>
+                            <h6 id="border1" class="linePad">|</h6>
+                            <p id="lTmp1">34°F</p>
                         </div>
                     </div>
-                    <div class="card dayFiveForecast nightFiveForecast">
-                        <p class="text-center nightText">Wed 12/9</p>
+                    <div id="day2" class="card dayFiveForecast nightFiveForecast">
+                        <p id="dayTwo" class="">Wed 12/9</p>
                         <div class="d-flex justify-content-center">
-                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
-                            <img src="./image/white rain.png" alt="">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/white rain.png" alt=""> -->
                         </div>
-                        <div class="d-flex justify-content-center mt-2 nightText">
-                            <p>74°F</p>
+                        <div id="dayTwoTextD" class="d-flex justify-content-center mt-2 nightText">
+                            <p id="hTmp2">74°F</p>
                             
                             
                             <h6 class="linePad"> | </h6>
-                            <p>34°F</p>
+                            <p id="lTmp2">34°F</p>
                         </div>
                     </div>
-                    <div class="card dayFiveForecast nightFiveForecast">
-                        <p class="text-center nightText">Thur 12/10</p>
+                    <div id="day3" class="card dayFiveForecast nightFiveForecast">
+                        <p id="dayThree" class="">Thur 12/10</p>
                         <div class="d-flex justify-content-center">
-                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
-                            <img src="./image/white rain.png" alt="">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/white rain.png" alt=""> -->
                         </div>
-                        <div class="d-flex justify-content-center mt-2 nightText">
-                            <p>74°F</p>
+                        <div id="dayThreeTextD" class="d-flex justify-content-center mt-2 nightText">
+                            <p id="hTmp3">74°F</p>
                             <h6 class="linePad">|</h6>
-                            <p>34°F</p>
+                            <p id="lTmp3">34°F</p>
                         </div>
                         
                         
                     </div>
-                    <div class="card dayFiveForecast nightFiveForecast">
-                        <p class="text-center nightText">Fri 12/11</p>
+                    <div id="day4" class="card dayFiveForecast nightFiveForecast">
+                        <p id="dayFour" class="t">Fri 12/11</p>
                         <div class="d-flex justify-content-center">
-                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
-                            <img src="./image/white rain.png" alt="">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/white rain.png" alt=""> -->
                         </div>
-                        <div class="d-flex justify-content-center mt-2 nightText">
-                            <p>74°F</p>
+                        <div id="dayFourTextD" class="d-flex justify-content-center mt-2 nightText">
+                            <p id="hTmp4">74°F</p>
                             <h6 class="linePad">|</h6>
-                            <p>34°F</p>
+                            <p id="lTmp4">34°F</p>
                         </div>
                     </div>
-                    <div class="card dayFiveForecast nightFiveForecast">
-                        <p class="text-center nightText">Sat 12/12</p>
+                    <div id="day5" class="card dayFiveForecast nightFiveForecast">
+                        <p id="dayFive" class="">Sat 12/12</p>
                         <div class="d-flex justify-content-center">
-                            <!-- <img src="./image/rain.png" width="45px" height="45px" alt=""> -->
-                            <img src="./image/white rain.png" alt="">
+                            <img src="./image/rain.png" width="45px" height="45px" alt="">
+                            <!-- <img src="./image/white rain.png" alt=""> -->
                         </div>
-                        <div class="d-flex justify-content-center mt-2 nightText">
-                            <p>74°F</p>
+                        <div id="dayFiveTextD" class="d-flex justify-content-center mt-2 nightText">
+                            <p id="hTmp5">74°F</p>
                             <h6 class="linePad">|</h6>
-                            <p>34°F</p>
+                            <p id="lTmp5">34°F</p>
                         </div>
                     </div>
                 </div>
@@ -193,24 +197,11 @@
             <div class="row mt-3">
                 <div class="col-4"></div>
                 <div class="col-4 d-flex justify-content-center">
-                      <button class="btn btn-light text-center btnNight dayFavLBtn nightFavLBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                        <h6 class="favBtnL favLText nightText">
-                             <!-- <img src="./image/greyHeart.png" alt="Grey Heart"> -->
-                             <img src="./image/whiteHeart.png" height="17px" alt="white Heart">
-                              Open Your Favorite Places</h6>
-                      </button>
+                    <button id="favBtn" class="btn btn-light text-center btnNight dayFavLBtn nightFavLBtn" >
+                        <!-- <img src="./image/whiteHeart.png" height="17px" alt="white Heart"> -->
+                              <h6><div id="favHeart"></div>Open Your Favorite Places</h6>
+                    </button>
                       
-                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                        <div class="offcanvas-header">
-                          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Favorite Cities</h5>
-                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                          <div>
-                            
-                          </div>
-                        </div>
-                      </div>
                 </div>
                 <div class="col-4"></div>
             </div>
@@ -224,8 +215,9 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="./script/app.js"></script>
-    <script src="./script/nightOrDay.js"></script>
+    <script src="./script/nightOrDay.js" type="module"></script>
     <script src="./script/time.js"></script>
+    <script src="./script/fiveDay.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
