@@ -54,7 +54,7 @@ let dayFourTextD = document.getElementById('dayFourTextD');
 let dayFiveTextD = document.getElementById('dayFiveTextD');
 let favBtn = document.getElementById('favBtn');
 let favHeart = document.getElementById('favHeart');
-
+let favText = document.getElementById('favText')
 
 
 
@@ -114,7 +114,7 @@ function setDayOrNight(){
             favBtn.className ='btn btn-light text-center btnNight nightFavLBtn';
             heart.className = 'whiteHeart';
             favHeart.className ='anotherWhiteHeart img-fluid text-center';
-
+            favText.className ='nightText5';
 
           }
           //day
@@ -163,6 +163,7 @@ function setDayOrNight(){
             favBtn.className ='btn btn-light text-center dayFavLBtn';
             heart.className='heart';
             favHeart.className ='greyHeart img-fluid text-center';
+            favText.className ='dayText5';
           }
           
   
@@ -170,5 +171,4 @@ function setDayOrNight(){
 }
 setDayOrNight();
 
-// import createwhiteHeart from './createHeart.js'
-// import makeHeart from './createHeart.js'
+

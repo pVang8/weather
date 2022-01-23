@@ -3,6 +3,12 @@
     color: black;
     font-family: 'Biryani', sans-serif;
 }
+.dayText5{
+    color: black;
+    font-family: 'Biryani', sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+}
 .dayPhiloText{
     color: black;
     font-family: 'Philosopher', sans-serif;
@@ -158,13 +164,19 @@
 
 .greyHeart{
 background-image: url('../image/greyHeart.png');
-height: 25px;
-width: 28px;
+height: 18px;
+width: 20px;
+position: fixed;
+margin-left: 40px;
+margin-top: -3px;
 }
 .anotherWhiteHeart{
-background-image: url('../image/whiteHeart.png');
-height: 25px;
-width: 28px;
+background-image: url('..//image/tiny.png');
+height: 18px;
+width: 20px;
+position: fixed;
+margin-left: 40px;
+margin-top: -3px;
 }
 
 
@@ -208,6 +220,13 @@ width: 28px;
     color: white;
     font-family: 'Biryani', sans-serif;
 }
+.nightText5{
+    color: white;
+    font-family: 'Biryani', sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
 .nightTextMain{
     color: white;
     font-family: 'Philosopher', sans-serif;
