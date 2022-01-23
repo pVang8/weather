@@ -281,3 +281,52 @@ margin-top: -3px;
     background-color: rgba(18.4%, 18.4%, 18.4%);
     border: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nightLongCard{
+    width: 100%;
+    height: 150px;
+    border-radius: 18px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: rgba(18.4%, 18.4%, 18.4%);
+}
+.dayLongCard{
+    width: 100%;
+    height: 150px;
+    border-radius: 18px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: white;
+}
+
+.noM{
+    margin-bottom: 5%;
+    margin-left: 25px;
+}8
+.noMoo{
+    margin-bottom: 5%;
+    margin-left: -25px;
+}
+.test1{
+    border-left: 3px dotted #c7c5c5;
+    height: 110px;
+    
+}
+.mooText{
+    margin-top: 1rem;
+}

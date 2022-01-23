@@ -8,6 +8,7 @@ let firstCard = document.getElementById('firstCard');
 let heart = document.getElementById("heart");
 let mainTemp = document.getElementById("mainTemp");
 let hDot = document.getElementById("hDot");
+let hDot2 = document.getElementById("hDot2");
 let time = document.getElementById('time');
 let secCard = document.getElementById('secCard');
 let weatherTxt = document.getElementById('weatherTxt');
@@ -82,6 +83,7 @@ function setDayOrNight(){
             
             mainTemp.className="nightTextMain";
             hDot.className ="nightHr noMnoP";
+            hDot2.className ="nightHr noMnoP";
             time.className = 'd-flex justify-content-end nightText';
             secCard.className= 'card nightCard';
             weatherTxt.className = 'nightPhiloTxt';
@@ -111,7 +113,7 @@ function setDayOrNight(){
             dayThree.className ="text-center nightText mt-1";
             dayFour.className ="text-center nightText mt-1";
             dayFive.className ="text-center nightText mt-1";
-            favBtn.className ='btn btn-light text-center btnNight nightFavLBtn';
+            favBtn.className ='btn  text-center btnNight nightFavLBtn';
             heart.className = 'whiteHeart';
             favHeart.className ='anotherWhiteHeart img-fluid text-center';
             favText.className ='nightText5';
@@ -131,6 +133,7 @@ function setDayOrNight(){
            
             mainTemp.className="dayMainTemp";
             hDot.className ="dayHr noMnoP";
+            hDot2.className ="dayHr noMnoP";
             time.className ='d-flex justify-content-end dayText';
             secCard.className= 'card dayCard';
             weatherTxt.className = 'dayPhiloText';

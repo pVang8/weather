@@ -55,8 +55,8 @@ function oneCallAway(){
 }
 oneCallAway();
 
-setTimeout(()=>{
-    number.map()
+// setTimeout(()=>{
+//     number.map()
 
-},100)
+// },100)
 
