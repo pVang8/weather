@@ -26,7 +26,7 @@ function oneCallAway(){
     fetch('https://api.openweathermap.org/data/2.5/onecall?lat=37.661388&lon=-120.994446&exclude={part}&e59079bc9d41cb1df5042ed6f32b3463')
     .then(resp => resp.json())
     .then(data => {console.log(data);
-        number = data.daily;
+        
         morn = data.daily[0].temp.morn;
         mid = data.daily[0].temp.eve;
         late = data.daily[0].temp.night;
