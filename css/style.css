@@ -330,3 +330,16 @@ margin-top: -3px;
 .mooText{
     margin-top: 1rem;
 }
+
+.bigDayImage{
+    background-image: url('../image/sunny.png');
+    height: 80px;
+    width: 79px;
+}
+.bigNightImage{
+    background-image: url('../image/night.png');
+    height: 50px;
+    width: 50px;
+    
+}
+

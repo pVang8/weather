@@ -55,7 +55,8 @@ let dayFourTextD = document.getElementById('dayFourTextD');
 let dayFiveTextD = document.getElementById('dayFiveTextD');
 let favBtn = document.getElementById('favBtn');
 let favHeart = document.getElementById('favHeart');
-let favText = document.getElementById('favText')
+let favText = document.getElementById('favText');
+let bigPic = document.getElementById('bigPic');
 
 
 
@@ -65,9 +66,10 @@ let favText = document.getElementById('favText')
 function setDayOrNight(){
   fetch('https://api.openweathermap.org/data/2.5/forecast?q=modesto&appid=beb82069579ce783ca0622097e57eb73')
   .then(response => response.json())
-  .then(data => {console.log(data);
-          result = data.list[0].sys.pod
-          console.log(result);
+  .then(data => {
+    // console.log(data);
+          result = data.list[15].sys.pod
+          // console.log(result);
           //night
           if(result == "n")
           {
@@ -78,7 +80,7 @@ function setDayOrNight(){
             inputBox.className="nightInputBox";
             firstCard.className ="card nightCard";
             nText.className = "nightText";
-            document.write
+            bigPic.className = 'bigNightImage';
             
             
             mainTemp.className="nightTextMain";
@@ -129,6 +131,7 @@ function setDayOrNight(){
             inputBox.className="inputBox";
             firstCard.className ="card dayCard";
             nText.className = "dayText";
+            bigPic.className = 'bigDayImage';
            
            
             mainTemp.className="dayMainTemp";

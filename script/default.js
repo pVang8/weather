@@ -1,0 +1,211 @@
+
+
+
+
+let startT= document.getElementById('startT');
+let midT= document.getElementById('midT');
+let endT= document.getElementById('endT');
+let mainTemp = document.getElementById('mainTemp');
+let weatherTxt = document.getElementById('weatherTxt');
+let morn = 0;
+let mid = 0;
+let late = 0;
+let main = 0;
+let max = 0;
+let min = 0;
+let listTemp = [];
+
+let number = [];
+let base = [];
+
+
+
+// make the function actually be a function 
+//temp for 8am noon and 8pm
+function oneCallAway(){
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=37.6393&lon=-120.9970&exclude={part}&appid=e59079bc9d41cb1df5042ed6f32b3463')
+    .then(resp => resp.json())
+    .then(data => {
+        console.log(data);
+        base = data.daily;
+        
+        
+        morn = base[0].temp.morn;
+        mid = base[0].temp.eve;
+        late = base[0].temp.night;
+        main = data.current.temp;
+        max = base[0].temp.max;
+        min = base[0].temp.min;
+        //move number to a list
+        listTemp.push(morn,mid,late,main,max,min);
+
+        const map1 = listTemp.map(x =>  (x - 273.15) * (9/5) + 32);
+        // console.log(map1[0])
+        startT.textContent= map1[0].toFixed(0) + "°";
+        midT.textContent= map1[1].toFixed(0)+ "°";
+        endT.textContent= map1[2].toFixed(0)+ "°";
+        //current temp
+        mainTemp.textContent= map1[3].toFixed(0)+ "°";
+        //high and low for today
+        highT.textContent= "H: "+ map1[4].toFixed(0)+ "°F";
+        lowT.textContent= "L: "+map1[5].toFixed(0)+ "°F";
+        //current temp
+        mainTemp.textContent = ((data.current.temp - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+        //display cloudy
+        weatherTxt.textContent = data.daily[0].weather[0].main;
+
+        //get next 5 day data
+        allFive();
+        
+
+    })
+}
+oneCallAway();
+let hTmp1 =document.getElementById('hTmp1');
+let lTmp1 =document.getElementById('lTmp1');
+
+
+let nText = document.getElementById('nText');
+function nextFive(){
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=modesto&appid=beb82069579ce783ca0622097e57eb73')
+.then(response => response.json())
+.then(data => {console.log(data);
+
+    nText.textContent = data.city.name;
+
+})
+}
+nextFive();
+
+ function allFive(){
+    for (let i = 0; i < 5; i++) {
+        if (i==0){
+            
+            hTmp1.textContent = ((base[0].temp.max - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            lTmp1.textContent = ((base[0].temp.min - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            
+        }
+        else if (i==1){
+            
+            hTmp2.textContent = ((base[1].temp.max - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            lTmp2.textContent = ((base[1].temp.min - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            
+        }
+        else if (i==2){
+            
+            hTmp3.textContent = ((base[2].temp.max - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            lTmp3.textContent = ((base[2].temp.min - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            
+        }
+        else if (i==3){
+            
+            hTmp4.textContent = ((base[3].temp.max - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            lTmp4.textContent = ((base[3].temp.min - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            
+        }
+        else if (i==4){
+            
+            hTmp5.textContent = ((base[4].temp.max - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            lTmp5.textContent = ((base[4].temp.min - 273.15) * (9/5) + 32).toFixed(0) + "°F";
+            
+        }
+        
+    }
+}
+
+const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function displayDate(){
+    const d = new Date();
+    for (let j = 0; j < weekday.length; j++) {
+        if (j==0) {
+            //get day of week
+            let day1 = weekday[d.getDay()+j];
+            let dayAndDate1 = day1.slice(0,3);
+            // console.log(dayAndDate1);
+
+            //get month
+            let monthDay = new Date();
+            let nameOfMon = month[monthDay.getMonth()];
+            let firstDay = month.indexOf(nameOfMon)+1;
+
+            // console.log(firstDay);
+            // get day
+            let numberDay = new Date();
+            let numberDayNum = numberDay.getDate()+j;
+            // console.log(numberDayNum);
+            dayOne.textContent =  dayAndDate1 + ' '+ firstDay + '/' + numberDayNum;
+        }
+        else if (j==1) {
+            let day2 = weekday[d.getDay()+j];
+            let dayAndDate2 = day2.slice(0,3);
+            // console.log(dayAndDate2);
+            //get month
+            let monthDay = new Date();
+            let nameOfMon = month[monthDay.getMonth()];
+            let firstDay = month.indexOf(nameOfMon)+1;
+
+            // console.log(firstDay);
+            // get day
+            let numberDay = new Date();
+            let numberDayNum = numberDay.getDate()+j;
+            // console.log(numberDayNum);
+            dayTwo.textContent =  dayAndDate2 + ' '+ firstDay + '/' + numberDayNum;
+        }
+        else if (j==2) {
+            let day3 = weekday[d.getDay()+j];
+            let dayAndDate3 = day3.slice(0,3);
+            // console.log(dayAndDate3);
+            //get month
+            let monthDay = new Date();
+            let nameOfMon = month[monthDay.getMonth()];
+            let firstDay = month.indexOf(nameOfMon)+1;
+
+            // console.log(firstDay);
+            // get day
+            let numberDay = new Date();
+            let numberDayNum = numberDay.getDate()+j;
+            // console.log(numberDayNum);
+            dayThree.textContent =  dayAndDate3 + ' '+ firstDay + '/' + numberDayNum;
+        }
+        else if (j==3) {
+            let day4 = weekday[d.getDay()+j];
+            let dayAndDate4 = day4.slice(0,3);
+            // console.log(dayAndDate4);
+            //get month
+            let monthDay = new Date();
+            let nameOfMon = month[monthDay.getMonth()];
+            let firstDay = month.indexOf(nameOfMon)+1;
+
+            // console.log(firstDay);
+            // get day
+            let numberDay = new Date();
+            let numberDayNum = numberDay.getDate()+j;
+            // console.log(numberDayNum);
+            dayFour.textContent =  dayAndDate4 + ' '+ firstDay + '/' + numberDayNum;
+        }
+        else if (j==4) {
+            let day5 = weekday[d.getDay()+j];
+            let dayAndDate5 = day5.slice(0,3);
+            // console.log(dayAndDate5);
+            //get month
+            let monthDay = new Date();
+            let nameOfMon = month[monthDay.getMonth()];
+            let firstDay = month.indexOf(nameOfMon)+1;
+
+            // console.log(firstDay);
+            // get day
+            let numberDay = new Date();
+            let numberDayNum = numberDay.getDate()+j;
+            // console.log(numberDayNum);
+            dayFive.textContent =  dayAndDate5 + ' '+ firstDay + '/' + numberDayNum;
+        }
+        
+    }
+    
+}
+displayDate();
+
+
+

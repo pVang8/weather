@@ -30,7 +30,7 @@
                 <input type="text" id="inputBox" class=" " placeholder="Search for a City">
             </div>
             <div class="col-3 text-center mt-2">
-                <button type="button" class="btn searchBtn d-flex justify-content-center"><img src="./image/search.png" width="20px" alt="magnifying glass"></button>
+                <button type="button" id="inputBtn" class="btn searchBtn d-flex justify-content-center"><img src="./image/search.png" width="20px" alt="magnifying glass"></button>
             </div>
         </div>
     <!-- body -->
@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <div class="row" height="100px">
                             <div class="col-6">
-                                <h3 id="nText" class=" ">Modesto</h3>
+                                <h3 id="nText" class=" ">City</h3>
                             </div>
                             <div class="col-6 d-flex justify-content-end">
                                 <!-- creating elements -->
@@ -53,7 +53,8 @@
                         <div class="row ">
                             <div class="col-4">
                                 <!-- creating elements -->
-                                <img src="./image/sunny.png" height="90px" alt="sun logo">
+                                <div id="bigPic"></div>
+                                <!-- <img src="./image/sunny.png" height="90px" alt="sun logo"> -->
                                 <!-- <img src="./image/night.png" height="55px" alt=" moon logo"> -->
                             </div>
                             <div class="col-8">
@@ -67,7 +68,7 @@
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <p id="weatherTxt" class="nightText">cloudy</p>
+                                <p id="weatherTxt" class="nightText">Sky</p>
                             </div>
                             <div class="col-3">
                                 <p id="highT" class="d-flex justify-content-end nightText">H:72°F</p>
@@ -201,8 +202,9 @@
                         <div class="row">
                             <div class="col-6 nightText mt-4">
                                 <h4>Wednesday</h4>
-                                <hr id="hDot2" class=" "/>
-                                <h5>Cloudy</h5>
+                                <div id="hDot2"></div>
+                                
+                                <h5 class="mt-2" >Cloudy</h5>
                             </div>
                             <div class="col-2 nightText   mt-4">
                                 <p class="noM text-center"> 8am </p>
@@ -257,11 +259,12 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./script/app.js" type="module"></script>
+    <script src="./script/default.js" type="module"></script>
     <script src="./script/nightOrDay.js" type="module"></script>
     <script src="./script/time.js"></script>
     <script src="./script/fiveDay.js"></script>
     <script src="./script/mainCardDisplay.js"></script>
+    <script src="./script/input.js" type="module"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
