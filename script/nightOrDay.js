@@ -68,7 +68,7 @@ function setDayOrNight(){
   .then(response => response.json())
   .then(data => {
     // console.log(data);
-          result = data.list[15].sys.pod
+          result = data.list[0].sys.pod
           // console.log(result);
           //night
           if(result == "n")
@@ -85,7 +85,7 @@ function setDayOrNight(){
             
             mainTemp.className="nightTextMain";
             hDot.className ="nightHr noMnoP";
-            hDot2.className ="nightHr noMnoP";
+            // hDot2.className ="nightHr noMnoP";
             time.className = 'd-flex justify-content-end nightText';
             secCard.className= 'card nightCard';
             weatherTxt.className = 'nightPhiloTxt';
@@ -136,7 +136,7 @@ function setDayOrNight(){
            
             mainTemp.className="dayMainTemp";
             hDot.className ="dayHr noMnoP";
-            hDot2.className ="dayHr noMnoP";
+            // hDot2.className ="dayHr noMnoP";
             time.className ='d-flex justify-content-end dayText';
             secCard.className= 'card dayCard';
             weatherTxt.className = 'dayPhiloText';
