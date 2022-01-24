@@ -23,13 +23,11 @@ let base = [];
 // make the function actually be a function 
 //temp for 8am noon and 8pm
 function oneCallAway(){
-    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=37.6393&lon=-120.9970&exclude={part}&appid=e59079bc9d41cb1df5042ed6f32b3463')
+    fetch('https://api.openweathermap.org/data/2.5/onecall?lat=37.6393&lon=-120.9970&exclude={part}&appid=beb82069579ce783ca0622097e57eb73')
     .then(resp => resp.json())
     .then(data => {
         console.log(data);
         base = data.daily;
-        
-        
         morn = base[0].temp.morn;
         mid = base[0].temp.eve;
         late = base[0].temp.night;

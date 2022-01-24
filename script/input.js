@@ -63,13 +63,16 @@ inputBtn.addEventListener('click', function(e){
     })
 })
 
+let miniOne = document.getElementById('miniOne');
+
 function allFive(){
     for (let i = 0; i < 5; i++) {
         if (i==0){
             
             hTmp1.textContent = ((base[0].temp.max - 273.15) * (9/5) + 32).toFixed(0) + "°F";
             lTmp1.textContent = ((base[0].temp.min - 273.15) * (9/5) + 32).toFixed(0) + "°F";
-            
+            // miniOne.textContent = base[0].weather[0].icon;
+            // console.log(base[0].weather[0].icon);
         }
         else if (i==1){
             
